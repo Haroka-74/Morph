@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Paaji 2', 'cursive';
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.card {
+    width: 70%;
+    max-width: 325px;
+    height: 35rem;
+    background-color: rgb(34, 40, 49);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.card .person-image {
+    height: calc(100% / 3);
+}
+
+.card .person-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #272133;
+    margin-top: 20px;
+    box-shadow: 0 1px 25px #00ADB5;
+    margin-left: calc((100% - 160px) / 2);
+}
+
+.card .person-data {
+    height: calc(100% / 3);
+}
+
+.card .person-data p {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #00ADB5;
+}
+
+.card .person-data .stats {
+    margin-top: 10px;
+    font-size: 0.80em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.card .person-data .stats p {
+    color: white;
+}
+
+.card .person-data .social {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 35px;
+}
+
+.card .person-data .social a {
+    font-size: 35px;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    color: white;
+}
+
+.card .person-data .social a:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.card .person-actions {
+    height: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .person-actions a {
+    width: 70%;
+    height: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.card .person-actions .follow-btn {
+    background-color: #00ADB5;
+    color: white;
+    border: 2px solid #00ADB5;
+    box-shadow: 0 4px 10px rgba(0, 173, 181, 0.3);
+}
+
+.card .person-actions .follow-btn:hover {
+    background-color: transparent;
+    color: #00ADB5;
+    box-shadow: 0 6px 15px rgba(0, 173, 181, 0.4);
+    transform: scale(1.05);
+}
+
+.card .person-actions .message-btn {
+    background-color: transparent;
+    color: #00ADB5;
+    border: 2px solid #00ADB5;
+}
+
+.card .person-actions .message-btn:hover {
+    background-color: #00ADB5;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 173, 181, 0.4);
+    transform: scale(1.05);
+}
